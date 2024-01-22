@@ -1,0 +1,9 @@
+<ul>
+    <li *ngFor="let pokemon of pokemons">
+        <h4>{{pokemon.name.english}}</h4>
+        <img src="{{pokemon.image.thumbnail}}" alt="{{pokemon.name.english}}"> <br>
+        <a routerLink="{{pokemon.id}}">
+            <button type="submit" class="btn btn-primary"><img src="{{pokemon.image.sprite}}" alt="{{pokemon.name.english}}"> details</button>
+        </a>
+    </li>
+</ul>
